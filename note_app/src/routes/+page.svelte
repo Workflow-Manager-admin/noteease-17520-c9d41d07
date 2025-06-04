@@ -138,19 +138,6 @@
   // Filter notes based on searchTerm (case-insensitive, in title or content)
   $: filteredNotes = searchTerm.trim().length
     ? notes.filter(
-        (n) =>
-          n.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          // Strip HTML from content for searching
-          document.createElement("div").innerHTML = n.content,
-          (document.createElement("div").innerHTML = n.content,
-          document.createElement("div").innerText ||
-            n.content.toLowerCase().includes(searchTerm.toLowerCase()))
-      )
-    : notes;
-
-  // More robust HTML strip for search
-  $: filteredNotes = searchTerm.trim().length
-    ? notes.filter(
         (n) => {
           const div = document.createElement("div");
           div.innerHTML = n.content;
