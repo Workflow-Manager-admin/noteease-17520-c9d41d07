@@ -149,18 +149,18 @@
 <style>
   :global(body) {
     font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    background: {COLORS.background};
-    color: {COLORS.text};
+    background: #F9F9F9;
+    color: #222222;
   }
   .container {
-    background: {COLORS.secondary};
+    background: #FFFFFF;
     max-width: 420px;
     margin: 3rem auto;
     border-radius: 14px;
     box-shadow: 0 3px 24px 0 rgba(50, 120, 180, 0.09);
     padding: 0 0 2.5rem 0;
     min-height: 75vh;
-    border: 1px solid {COLORS.border};
+    border: 1px solid #E6E6E6;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -168,7 +168,7 @@
   .main-header {
     font-weight: 700;
     font-size: 2rem;
-    color: {COLORS.primary};
+    color: #4A90E2;
     padding: 2rem 2rem 0.2rem 2rem;
     text-align: left;
     letter-spacing: 0.01em;
@@ -180,15 +180,15 @@
     width: 100%;
     padding: 0.7rem 1.2rem;
     font-size: 1rem;
-    border: 1px solid {COLORS.border};
+    border: 1px solid #E6E6E6;
     border-radius: 48px;
     outline: none;
-    background: {COLORS.background};
-    color: {COLORS.text};
+    background: #F9F9F9;
+    color: #222222;
     transition: box-shadow 0.2s;
   }
   .search-bar input:focus {
-    box-shadow: 0 0 0 2px {COLORS.primary}33;
+    box-shadow: 0 0 0 2px #4A90E233;
   }
   .note-list {
     flex: 1;
@@ -199,22 +199,22 @@
     display: flex;
     flex-direction: column;
     padding: 1.1rem 1.2rem 1.1rem 1rem;
-    border-bottom: 1px solid {COLORS.border};
+    border-bottom: 1px solid #E6E6E6;
     margin-bottom: 0.3rem;
-    background: {COLORS.secondary};
+    background: #FFFFFF;
     border-radius: 9px;
     transition: box-shadow 0.11s;
     position: relative;
     cursor: pointer;
   }
   .note-item:hover {
-    background: {COLORS.background};
+    background: #F9F9F9;
     box-shadow: 0 2px 9px 2px #4a90e203;
   }
   .note-title {
     font-weight: 600;
     font-size: 1.07rem;
-    color: {COLORS.primary};
+    color: #4A90E2;
     margin-bottom: 0.09rem;
     word-break: break-all;
   }
@@ -235,7 +235,7 @@
   .note-actions button {
     background: none;
     border: none;
-    color: {COLORS.accent};
+    color: #F5A623;
     font-size: 1.17rem;
     cursor: pointer;
   }
@@ -244,8 +244,8 @@
     right: calc(10vw + 1rem);
     bottom: 3.8rem;
     z-index: 99;
-    background: {COLORS.primary};
-    color: {COLORS.secondary};
+    background: #4A90E2;
+    color: #FFFFFF;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -259,8 +259,8 @@
     transition: background 0.2s;
   }
   .fab:hover {
-    background: {COLORS.accent};
-    color: {COLORS.primary};
+    background: #F5A623;
+    color: #4A90E2;
   }
   /* Modal styles */
   .modal-overlay {
@@ -273,9 +273,9 @@
     z-index: 200;
   }
   .modal {
-    background: {COLORS.secondary};
+    background: #FFFFFF;
     border-radius: 1rem;
-    box-shadow: 0 11px 40px 0 {COLORS.primary}22;
+    box-shadow: 0 11px 40px 0 #4A90E222;
     max-width: 97vw;
     width: 384px;
     min-height: 330px;
@@ -287,7 +287,7 @@
   .modal-header {
     font-size: 1.14rem;
     font-weight: 600;
-    color: {COLORS.primary};
+    color: #4A90E2;
     margin-bottom: 0.7rem;
     text-align: left;
   }
@@ -306,16 +306,16 @@
     width: 100%;
     font-size: 1rem;
     padding: 0.55rem 0.95rem;
-    border: 1px solid {COLORS.border};
+    border: 1px solid #E6E6E6;
     border-radius: 7px;
-    background: {COLORS.background};
-    color: {COLORS.text};
+    background: #F9F9F9;
+    color: #222222;
     margin-bottom: 0.65rem;
     outline: none;
     box-sizing: border-box;
   }
   .modal-form input:focus {
-    border: 1.7px solid {COLORS.primary};
+    border: 1.7px solid #4A90E2;
   }
   .modal-form .format-toolbar {
     display: flex;
@@ -325,7 +325,7 @@
   .modal-form .format-toolbar button {
     background: none;
     border: none;
-    color: {COLORS.primary};
+    color: #4A90E2;
     font-size: 1.11rem;
     font-weight: 600;
     border-radius: 4px;
@@ -334,23 +334,23 @@
     padding: 0.18rem 0.21rem;
   }
   .modal-form .format-toolbar button:hover {
-    background: {COLORS.faded};
-    color: {COLORS.accent};
+    background: #9BB9D7;
+    color: #F5A623;
   }
   .modal-form .content-editable {
-    border: 1.1px solid {COLORS.border};
+    border: 1.1px solid #E6E6E6;
     border-radius: 8px;
     min-height: 95px;
     padding: 0.7rem 0.9rem;
     font-size: 1rem;
-    background: {COLORS.background};
-    color: {COLORS.text};
+    background: #F9F9F9;
+    color: #222222;
     outline: none;
     margin-bottom: 0.6rem;
     transition: border 0.13s;
   }
   .modal-form .content-editable:focus {
-    border: 1.7px solid {COLORS.primary};
+    border: 1.7px solid #4A90E2;
   }
   .modal-footer {
     display: flex;
@@ -365,8 +365,8 @@
     padding: 0.54rem 1.18rem;
     cursor: pointer;
     font-weight: 500;
-    background: {COLORS.primary};
-    color: {COLORS.secondary};
+    background: #4A90E2;
+    color: #FFFFFF;
     transition: background 0.17s;
   }
   .modal-footer button.delete {
@@ -374,9 +374,9 @@
     color: #A00;
   }
   .modal-footer button.cancel {
-    background: {COLORS.background};
-    color: {COLORS.primary};
-    border: 1px solid {COLORS.border};
+    background: #F9F9F9;
+    color: #4A90E2;
+    border: 1px solid #E6E6E6;
   }
   .empty-state {
     text-align: center;
