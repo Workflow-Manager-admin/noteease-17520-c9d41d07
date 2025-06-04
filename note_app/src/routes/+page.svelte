@@ -2,18 +2,8 @@
   // PUBLIC_INTERFACE
   // Main Container for NoteEase: manages note list, modal/editor, search, formatting (bold/italic/underline), and CRUD logic.
 
-  import { onMount } from "svelte";
+  // No imports needed
 
-  // Color/theme configuration
-  const COLORS = {
-    primary: "#4A90E2",
-    secondary: "#FFFFFF",
-    accent: "#F5A623",
-    text: "#222222",
-    background: "#F9F9F9",
-    border: "#E6E6E6",
-    faded: "#9BB9D7"
-  };
 
   // Note model structure
   let notes = [
